@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact | Kovecreek Inc.</title>
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
-      color: #111;
+      padding: 0;
+      box-sizing: border-box;
     }
 
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    /* NAV (same as index & products) */
     header {
-      padding: 24px 40px;
       border-bottom: 1px solid #e5e5e5;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav {
+      max-width: 1400px;
+      margin: auto;
+      padding: 24px 40px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: 1px;
+      font-size: 22px;
     }
 
     nav a {
-      margin-left: 30px;
+      margin-left: 32px;
       text-decoration: none;
       color: #111;
       font-size: 14px;
+      letter-spacing: 1px;
       text-transform: uppercase;
     }
 
+    nav a:hover {
+      opacity: 0.6;
+    }
+
+    /* PAGE CONTENT */
     section {
       max-width: 900px;
       margin: auto;
@@ -35,24 +67,27 @@
     h1 {
       font-size: 56px;
       margin-bottom: 30px;
+      letter-spacing: -1px;
     }
 
     p {
       color: #555;
+      font-size: 18px;
       margin-bottom: 20px;
     }
 
     .box {
       border-top: 1px solid #e5e5e5;
       padding-top: 30px;
-      margin-top: 40px;
+      margin-top: 50px;
     }
 
     footer {
       border-top: 1px solid #e5e5e5;
-      padding: 60px;
+      padding: 80px 40px;
       text-align: center;
       color: #777;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -63,11 +98,11 @@
   <div class="nav">
     <div class="logo">KOVCREEK INC</div>
     <nav>
-  <a href="about.html">About</a>
-  <a href="products.html">Products</a>
-  <a href="about.html#capabilities">Capabilities</a>
-  <a href="contact.html">Contact</a>
-</nav>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="about.html#capabilities">Capabilities</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
 </header>
 
@@ -85,7 +120,7 @@
 </section>
 
 <footer>
-  © 2026 Kovecreek Inc.
+  © 2026 Kovecreek Inc. — Global Apparel Imports
 </footer>
 
 </body>
